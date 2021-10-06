@@ -68,7 +68,7 @@ class RefreshableSharedCredentialsProvider(credentials.SharedCredentialProvider
                     result['expiry_time'] = config[self.EXPIRY_TIME]
                 return result
 
-    async def _refresh(self) -> None:
+    def _refresh(self) -> None:
         """Invoked when the session is being refreshed"""
         return self._parse_credentials()
 

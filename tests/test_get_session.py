@@ -10,7 +10,7 @@ import botocore_refreshable_credentials
 TESTS = pathlib.Path(__file__).parent
 
 
-class TestCase(unittest.IsolatedAsyncioTestCase):
+class TestCase(unittest.TestCase):
 
     MISSING_ACCESS_KEY = str(TESTS / 'data' / 'missing_access_key')
     MISSING_EXPIRATION = str(TESTS / 'data' / 'missing-expiration')

@@ -1,5 +1,5 @@
 botocore-refreshable-credentials
-===================================
+================================
 Implements an botocore.Session subclass for using botocore with expiring
 credentials (IAM STS).
 
